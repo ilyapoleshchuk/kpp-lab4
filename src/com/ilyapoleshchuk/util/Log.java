@@ -4,7 +4,14 @@ public class Log {
 
     private enum Level {
         INFO,
-        ERROR
+        ERROR,
+        HEADER
+    }
+
+    public static void h(String message) {
+        System.out.println();
+        log(Level.HEADER, message);
+        System.out.println();
     }
 
     public static void i(String message) {
