@@ -1,13 +1,19 @@
 package com.ilyapoleshchuk.model;
 
+import com.ilyapoleshchuk.util.Log;
+
 public class NewSchoolPerson extends Person {
 
-    public NewSchoolPerson(String firstName, String lastName) {
+    NewSchoolPerson(String firstName, String lastName) {
         super(firstName, lastName, Generation.NEW_SCHOOL);
     }
 
     @Override
     public void performAction() {
-        //todo
+        useInternet();
+    }
+
+    private void useInternet() {
+        Log.i("Using internet...");
     }
 }
